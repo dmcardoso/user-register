@@ -9,5 +9,6 @@ export default {
         grey: '#E6EEF4',
         background: '#000000',
         placeholder: '#37363A',
+        error: '#cc0000',
     },
 };

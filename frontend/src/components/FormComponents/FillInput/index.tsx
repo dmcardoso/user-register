@@ -2,9 +2,10 @@ import React, { InputHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-interface Props extends InputHTMLAttributes<HTMLInputElement> {
+export interface Props extends InputHTMLAttributes<HTMLInputElement> {
     name: string;
     label: string;
+    error?: string;
 }
 
 const FillInput: React.FC<Props> = ({

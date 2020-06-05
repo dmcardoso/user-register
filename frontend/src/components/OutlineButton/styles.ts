@@ -28,4 +28,8 @@ export const StyledButton = styled.button.attrs((props: ButtonProps) => ({
     &:active {
         background: ${({ theme }) => lighten(0.08, theme.colors.primary)};
     }
+
+    a {
+        color: inherit;
+    }
 `;

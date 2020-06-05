@@ -74,7 +74,9 @@
         "@typescript-eslint/camelcase": "off",
         "no-restricted-globals": "off",
         "@typescript-eslint/ban-ts-ignore": "off",
-        "no-return-assign": "off"
+        "no-return-assign": "off",
+        "func-names": "off",
+        "jsx-a11y/label-has-associated-control": "off"
     },
     "settings": {
         "import/resolver": {

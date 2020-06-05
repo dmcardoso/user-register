@@ -1,18 +1,18 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import AppProvider from './context/App';
-import Default from './layouts/Default';
-import Login from './pages/Login';
+import ContextProvider from './context';
+import Routes from './routes';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
     return (
-        <AppProvider>
-            <GlobalStyle />
-            <Default>
-                <Login />
-            </Default>
-        </AppProvider>
+        <BrowserRouter>
+            <ContextProvider>
+                <GlobalStyle />
+                <Routes />
+            </ContextProvider>
+        </BrowserRouter>
     );
 };
 
